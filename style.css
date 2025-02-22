@@ -108,9 +108,14 @@ h6 {
 }
 
 .profile-img:hover {
-  transform: scale(1.05); /* Animasi hover */
+  transform: scale(1.05);
 }
 
+@media (max-width: 768px) {
+  .profile-img {
+    margin-top: 1rem; /* Beri sedikit jarak dari teks di atasnya */
+  }
+}
 .btn-primary {
   background-color: #007bff;
   border: none;
@@ -863,4 +868,24 @@ textarea:not(:focus):valid + .error-message {
     opacity: 1;
     transform: scale(1);
   }
+}
+.highlight-card {
+  border: 2px dashed #6c757d;
+  background: #f8f9fa;
+  padding: 20px;
+}
+
+.placeholder-container {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9ecef;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.placeholder-icon {
+  font-size: 3rem;
+  color: #6c757d;
 }
