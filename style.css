@@ -307,6 +307,25 @@ h6 {
   padding: 0.625rem;
 }
 
+#contactForm {
+  max-width: 600px;
+  width: 90%;
+}
+
+.error-message {
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 15px;
+  }
+  #contactForm {
+    width: 100%;
+  }
+}
+
 .btn {
   width: 100%;
   padding: 0.625rem;

@@ -628,31 +628,31 @@ Beyond academics, Luthfi enjoys learning new technologies, collaborating on proj
 </section>
 
   <!-- Contact Section -->
- <section id="contact" class="py-5 bg-light">
+<section id="contact" class="py-5 bg-light">
     <div class="container text-center">
         <h2 class="mb-4">Contact Me</h2>
-        <form id="contactForm" class="mt-4 w-50 mx-auto" novalidate>
+        <form id="contactForm" class="mt-4 mx-auto" novalidate>
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" placeholder="Your Name" pattern="^[A-Za-z\s]{3,50}$" required />
-                <div class="error-message" id="nameError">Name should contain only letters and spaces (3-50 characters).</div>
+                <div class="error-message text-danger d-none" id="nameError">Name should contain only letters and spaces (3-50 characters).</div>
             </div>
             <div class="mb-3">
                 <label for="phone" class="form-label">Phone Number</label>
-                <input type="number" class="form-control" id="phone" placeholder="081234567890" pattern="^[0-9]{10,15}$" required />
-                <div class="error-message" id="phoneError">Enter a valid phone number (10-15 digits).</div>
+                <input type="tel" class="form-control" id="phone" placeholder="081234567890" pattern="^[0-9]{10,15}$" required />
+                <div class="error-message text-danger d-none" id="phoneError">Enter a valid phone number (10-15 digits).</div>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" placeholder="your.email@example.com" required />
-                <div class="error-message" id="emailError">Enter a valid email address.</div>
+                <div class="error-message text-danger d-none" id="emailError">Enter a valid email address.</div>
             </div>
             <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
                 <textarea class="form-control" id="message" rows="4" placeholder="Your Message" minlength="10" required></textarea>
-                <div class="error-message" id="messageError">Message should be at least 10 characters long.</div>
+                <div class="error-message text-danger d-none" id="messageError">Message should be at least 10 characters long.</div>
             </div>
-            <button type="button" class="btn btn-primary" onclick="validateAndSend()">Send</button>
+            <button type="button" class="btn btn-primary w-100" onclick="validateAndSend()">Send</button>
         </form>
     </div>
 </section>
