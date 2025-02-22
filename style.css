@@ -46,9 +46,6 @@ h6 {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/KEIKUTSERTAAN_peserta_Muhammad\ Ruhunul\ Luthfi\ \(3\)-1.png");
-  background-size: cover;
-  background-position: center;
   color: white;
   padding: 9.375rem 0;
   text-align: center;
